@@ -1,9 +1,20 @@
+/* 
+Create a function that returns the first item in the array 
+  a) should return the 1st element on its own
+*/
+
+////// assertequal function //////
+
+
 const {assertEqual} = require('./assertEqual');
 
-function head(array) {
- return array[0]
-}
-//*  test assertations //*
+const head = function(array) {
+  return array[0]
+};
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+////////  test assertations //////
+
+assertEqual(head([111, 777, 333]), 777);
+assertEqual(head(["Mi", "chiamo", "Dominique"]), "Mi");
+
+
