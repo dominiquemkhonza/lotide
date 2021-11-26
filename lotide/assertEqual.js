@@ -1,12 +1,19 @@
 
-const assertEqual = function(actual, expected) {
+/* 
+assertEqual = A function that helps test our code
+**** assert **** function exists to determine if we have failed assertions
+*/
+
+const assertEqual = function(actual, expected){
   if (actual === expected) {
-    console.log(`✅ ✅ Assertion passed: ${actual} === ${expected}`);
+    console.log(`💚 Assertation Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑 🛑  Assertion failed: ${actual} !== ${expected}`);
+    console.log(`💔 Assertation Failed: ${actual} !== ${expected}`);
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+////// test code //////
+assertEqual("Ti", "Amo");
+assertEqual(777, 777);
+
+module.exports = {assertEqual}
