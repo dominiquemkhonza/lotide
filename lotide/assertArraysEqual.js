@@ -10,7 +10,9 @@ const assertArraysEqual = function(array1, array2) {
     }
 };
 
+/*
+
 assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
 assertArraysEqual(eqArrays(["1", "6", "3"], ["1", "2", "3"]), true);
-
+*/ 
 module.exports = assertArraysEqual;
