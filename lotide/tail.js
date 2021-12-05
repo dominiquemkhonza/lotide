@@ -5,19 +5,16 @@
 */
 
 ////// assertEqual code //////
-const {assertEqual} = require('./assertEqual');
+//const {assertEqual} = require('./assertEqual');//
 /////////////////////////////
 
-const words = ["profound", "metaphysical", "truths", "are", "present", "in", "nature"];
+//const words = ["profound", "metaphysical", "truths", "are", "present", "in", "nature"];
 
 const tail = function(array) {
-  let tailArray = [];
-  for (let i = 1; i <array.length; i++) {
-    tailArray.push(array[i]);
-  }
-  return tailArray;
+  let result = array.slice(1);
+  return result;
 };
 
-tail(words);
-assertEqual(words.length, 5);
+//tail(words);
+//assertEqual(words.length, 5);
 module.exports = tail;
