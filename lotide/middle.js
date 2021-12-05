@@ -5,8 +5,6 @@ MIDDLE function
   b) return the most-middle elements of a given-array
 */ 
 
-const {eqArrays} = require('./eqArrays');
-const {assertArraysEqual} = require('./assertArraysEqual');
 
 /////// actual function ///////
 const middle = function(array) {
